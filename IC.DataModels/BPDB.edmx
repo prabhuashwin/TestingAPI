@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BPDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Best_Practice_dt">
+          <Key>
+            <PropertyRef Name="PracticeID&#xD;&#xA;PracticeID&#xD;&#xA;PracticeID" />
+          </Key>
+          <Property Name="PracticeID&#xD;&#xA;PracticeID&#xD;&#xA;PracticeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Practicetype" Type="nvarchar(max)" />
+          <Property Name="Project_Code" Type="nvarchar(max)" />
+          <Property Name="Project_Name" Type="nvarchar(max)" />
+          <Property Name="Category" Type="nvarchar(max)" />
+          <Property Name="Sub_Category" Type="nvarchar(max)" />
+          <Property Name="Category_ID" Type="nvarchar(max)" />
+          <Property Name="Sub_Category_ID" Type="nvarchar(max)" />
+          <Property Name="Header" Type="nvarchar(max)" />
+          <Property Name="Abstract" Type="nvarchar(max)" />
+          <Property Name="Detailed_Content" Type="nvarchar(max)" />
+          <Property Name="Meta_Tags" Type="nvarchar(max)" />
+          <Property Name="Tangible_Intangible_Benefits" Type="nvarchar(max)" />
+          <Property Name="KeyTeam_Involved" Type="nvarchar(max)" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="Status" Type="nvarchar(max)" />
+          <Property Name="Pending_With" Type="nvarchar(max)" />
+          <Property Name="AttachmentPath" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="BPDBModelStoreContainer">
+          <EntitySet Name="Best_Practice_dt" EntityType="Self.Best_Practice_dt" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BPDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Best_Practice_dt">
+          <Key>
+            <PropertyRef Name="PracticeID__PracticeID__PracticeID" />
+          </Key>
+          <Property Name="PracticeID__PracticeID__PracticeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Practicetype" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Project_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Project_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sub_Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Category_ID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Sub_Category_ID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Abstract" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Detailed_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Meta_Tags" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tangible_Intangible_Benefits" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KeyTeam_Involved" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Pending_With" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AttachmentPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="BPDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Best_Practice_dt" EntityType="Self.Best_Practice_dt" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BPDBModelStoreContainer" CdmEntityContainer="BPDBEntities">
+          <EntitySetMapping Name="Best_Practice_dt">
+            <EntityTypeMapping TypeName="BPDBModel.Best_Practice_dt">
+              <MappingFragment StoreEntitySet="Best_Practice_dt">
+                <ScalarProperty Name="PracticeID__PracticeID__PracticeID" ColumnName="PracticeID&#xD;&#xA;PracticeID&#xD;&#xA;PracticeID" />
+                <ScalarProperty Name="Practicetype" ColumnName="Practicetype" />
+                <ScalarProperty Name="Project_Code" ColumnName="Project_Code" />
+                <ScalarProperty Name="Project_Name" ColumnName="Project_Name" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Sub_Category" ColumnName="Sub_Category" />
+                <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+                <ScalarProperty Name="Sub_Category_ID" ColumnName="Sub_Category_ID" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="Detailed_Content" ColumnName="Detailed_Content" />
+                <ScalarProperty Name="Meta_Tags" ColumnName="Meta_Tags" />
+                <ScalarProperty Name="Tangible_Intangible_Benefits" ColumnName="Tangible_Intangible_Benefits" />
+                <ScalarProperty Name="KeyTeam_Involved" ColumnName="KeyTeam_Involved" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Pending_With" ColumnName="Pending_With" />
+                <ScalarProperty Name="AttachmentPath" ColumnName="AttachmentPath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
